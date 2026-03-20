@@ -1,10 +1,11 @@
-# 📚 SumárioPRO — Sistema de Livro de Sumário e Controle de Presença
+#  https://africano69.github.io/IPAG/
+📚 SumárioPRO — Sistema de Livro de Sumário e Controle de Presença
 
 Sistema web completo para gestão de sumários e presenças de turmas escolares.
 
 ---
 
-## 📋 Requisitos
+📋 Requisitos
 
 - PHP >= 7.4
 - MySQL >= 5.7 (ou MariaDB >= 10.3)
@@ -13,21 +14,21 @@ Sistema web completo para gestão de sumários e presenças de turmas escolares.
 
 ---
 
-## 🚀 Instalação
+🚀 Instalação
 
-### 1. Copiar os ficheiros
+1. Copiar os ficheiros
 Coloque a pasta `sistema_escolar/` dentro do diretório raiz do servidor web:
 - **XAMPP**: `C:\xampp\htdocs\sistema_escolar\`
 - **Linux/Apache**: `/var/www/html/sistema_escolar/`
 
-### 2. Criar o banco de dados
+2. Criar o banco de dados
 Aceda ao phpMyAdmin ou use o terminal MySQL e execute:
 ```sql
 SOURCE /caminho/para/sistema_escolar/database.sql;
 ```
 Ou importe o ficheiro `database.sql` via phpMyAdmin.
 
-### 3. Configurar a conexão
+3. Configurar a conexão
 Edite o ficheiro `config.php` e ajuste as credenciais:
 ```php
 define('DB_HOST', 'localhost');
@@ -36,7 +37,7 @@ define('DB_PASS', '');           // sua senha MySQL
 define('DB_NAME', 'sistema_escolar');
 ```
 
-### 4. Acessar o sistema
+4. Acessar o sistema
 Abra o navegador e aceda:
 ```
 http://localhost/sistema_escolar/
@@ -44,7 +45,7 @@ http://localhost/sistema_escolar/
 
 ---
 
-## 🗂️ Estrutura de Ficheiros
+🗂️ Estrutura de Ficheiros
 
 ```
 sistema_escolar/
@@ -74,31 +75,31 @@ sistema_escolar/
 
 ---
 
-## 🎯 Funcionalidades
+🎯 Funcionalidades
 
-### 🔐 Autenticação
+🔐 Autenticação
 - Cadastro de professores (nome, email, senha com hash bcrypt)
 - Login seguro com sessões PHP
 - Logout
 
-### 📊 Dashboard
+📊 Dashboard
 - Estatísticas: nº de turmas, disciplinas, alunos, sumários
 - Taxa de presença dos últimos 30 dias
 - Últimos sumários registados
 - Atalhos rápidos para todas as secções
 
-### ⚙️ Configurações
+⚙️ Configurações
 - **Turmas**: criar, editar e apagar turmas por ano letivo
 - **Disciplinas**: associar disciplinas a cada turma com carga horária
 - **Alunos**: gerir alunos por turma (nome, nº, email)
 
-### 📖 Registo de Sumário
+📖 Registo de Sumário
 - Filtrar por turma e data
 - Registar sumário: turma, disciplina, data/hora, nº de aula, conteúdo
 - Editar e apagar sumários
 - Visualizar conteúdo completo
 
-### ✅ Marcar Presença
+✅ Marcar Presença
 - Selecionar turma → disciplina → sumário
 - Lista visual de alunos com botões Presente/Ausente
 - Marcar todos presentes ou todos ausentes
@@ -106,7 +107,7 @@ sistema_escolar/
 - Estatísticas em tempo real (presentes/ausentes/total)
 - Guardar e actualizar presenças a qualquer momento
 
-### 📈 Relatórios (Exportação Excel)
+📈 Relatórios (Exportação Excel)
 - **Sumários**: todos os conteúdos leccionados com filtros
 - **Lista de presenças**: detalhada por aluno/aula
 - **Resumo de presenças**: taxa de presença por aluno/disciplina (com código de cores)
@@ -115,7 +116,7 @@ sistema_escolar/
 
 ---
 
-## 🎨 Design
+🎨 Design
 - Interface moderna e responsiva
 - Sidebar recolhível (desktop) / overlay (mobile)
 - Notificações toast
@@ -124,7 +125,7 @@ sistema_escolar/
 
 ---
 
-## 🔒 Segurança
+🔒 Segurança
 - Senhas com `password_hash()` (bcrypt)
 - Consultas SQL com PDO prepared statements (prevenção de SQL Injection)
 - Verificação de sessão em todas as páginas protegidas
@@ -133,6 +134,6 @@ sistema_escolar/
 
 ---
 
-## 📞 Suporte
+📞 Suporte
 Desenvolvido com PHP + MySQL + HTML + CSS + JavaScript puro.
 Compatível com PHP 7.4+ e MySQL 5.7+.
